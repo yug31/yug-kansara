@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/yug-kansara/static/css/main.04e87f19.chunk.css",
+    "main.js": "/yug-kansara/static/js/main.0b5e37e3.chunk.js",
+    "main.js.map": "/yug-kansara/static/js/main.0b5e37e3.chunk.js.map",
+    "runtime-main.js": "/yug-kansara/static/js/runtime-main.2baf567c.js",
+    "runtime-main.js.map": "/yug-kansara/static/js/runtime-main.2baf567c.js.map",
+    "static/css/2.818011ed.chunk.css": "/yug-kansara/static/css/2.818011ed.chunk.css",
+    "static/js/2.f286a8c8.chunk.js": "/yug-kansara/static/js/2.f286a8c8.chunk.js",
+    "static/js/2.f286a8c8.chunk.js.map": "/yug-kansara/static/js/2.f286a8c8.chunk.js.map",
+    "index.html": "/yug-kansara/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/yug-kansara/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.04e87f19.chunk.css.map": "/yug-kansara/static/css/main.04e87f19.chunk.css.map",
+    "static/js/2.f286a8c8.chunk.js.LICENSE.txt": "/yug-kansara/static/js/2.f286a8c8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2baf567c.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.f286a8c8.chunk.js",
+    "static/css/main.04e87f19.chunk.css",
+    "static/js/main.0b5e37e3.chunk.js"
+  ]
+}
