@@ -1,0 +1,128 @@
+// n is number of stars required
+$visible-height: 100vh;
+$visible-width: 100vw;
+
+@function multiple-box-shadow($n) {
+  $value: "#{random(2000)}px #{random(2000)}px #FFF";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(2000)}px #{random(2000)}px #FFF";
+  }
+
+  @return unquote($value);
+}
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+
+#root {
+  height: 0;
+}
+
+html {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+}
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animStar 50s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: $visible-height;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+}
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 100s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: $visible-height;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+}
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation: animStar 150s linear infinite;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: $visible-height;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
+}
+#title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+#title .container {
+  width: 100%;
+}
+#title .navbar {
+  background-color: transparent !important;
+  color: white;
+}
+.navbar-nav a:hover {
+  color: white !important;
+}
+.w-30 {
+  width: 30%;
+}
+.my-info {
+  @media (max-width: 992px) {
+    width: 75% !important;
+  }
+  @media (min-width: 993px) {
+    width: 50% !important;
+  }
+}
+.my-img-div {
+  @media (max-width: 992px) {
+    width: 50% !important;
+  }
+  @media (min-width: 993px) {
+    width: 30% !important;
+  }
+}
+.my-img {
+  @media (max-width: 992px) {
+    width: 100% !important;
+  }
+  @media (min-width: 993px) {
+    width: 75% !important;
+  }
+}
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-$visible-width);
+  }
+} ;
