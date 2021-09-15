@@ -1,0 +1,77 @@
+#title .container {
+  width: 100%;
+}
+#title .navbar {
+  background-color: transparent !important;
+  color: white;
+}
+.navbar-nav a:hover {
+  color: white !important;
+}
+.w-30 {
+  width: 30%;
+}
+#title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.col-white {
+  color: white !important;
+}
+
+.project-card {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+  transform-style: preserve-3d;
+  transition: 1500ms;
+  cursor: pointer;
+}
+
+.flip {
+  --rotate-y: 180deg;
+}
+.card-front,
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 992px) {
+  .my-info {
+    width: 75% !important;
+  }
+  .my-img-div {
+    width: 50% !important;
+  }
+  .my-img {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .my-info {
+    width: 50% !important;
+  }
+  .my-img-div {
+    width: 30% !important;
+  }
+  .my-img {
+    width: 75% !important;
+  }
+}

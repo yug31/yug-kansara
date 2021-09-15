@@ -74,50 +74,7 @@ html {
     box-shadow: $shadows-big;
   }
 }
-#title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-}
-#title .container {
-  width: 100%;
-}
-#title .navbar {
-  background-color: transparent !important;
-  color: white;
-}
-.navbar-nav a:hover {
-  color: white !important;
-}
-.w-30 {
-  width: 30%;
-}
-.my-info {
-  @media (max-width: 992px) {
-    width: 75% !important;
-  }
-  @media (min-width: 993px) {
-    width: 50% !important;
-  }
-}
-.my-img-div {
-  @media (max-width: 992px) {
-    width: 50% !important;
-  }
-  @media (min-width: 993px) {
-    width: 30% !important;
-  }
-}
-.my-img {
-  @media (max-width: 992px) {
-    width: 100% !important;
-  }
-  @media (min-width: 993px) {
-    width: 75% !important;
-  }
-}
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
