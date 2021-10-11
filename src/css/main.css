@@ -53,6 +53,10 @@
   transform: rotateY(180deg);
 }
 
+.aboutMeText {
+  padding-right: 1.5rem;
+}
+
 @media only screen and (max-width: 992px) {
   .my-info {
     width: 75% !important;
@@ -62,6 +66,17 @@
   }
   .my-img {
     width: 100% !important;
+  }
+  .hideOnMob {
+    display: none !important;
+  }
+  .aboutMe {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutMeText {
+    padding-right: 0;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -73,5 +88,8 @@
   }
   .my-img {
     width: 75% !important;
+  }
+  .hideOnComp {
+    display: none !important;
   }
 }

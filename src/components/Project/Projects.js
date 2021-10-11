@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
-import ProjectCard2 from "./ProjectCard2";
-import ProjectCard3 from "./ProjectCard3";
+import { projectList } from "./ProjectList";
 
 export default function Projects() {
   return (
@@ -20,11 +19,17 @@ export default function Projects() {
             }}
             className="justify-content-center align-items-center"
           >
-            <ProjectCard />
-            <ProjectCard2 />
-            <ProjectCard3 />
-            <ProjectCard />
-            <ProjectCard />
+            {projectList.map((project, index) => {
+              return (
+                <ProjectCard
+                  key={index}
+                  title={project.title}
+                  link={project.link}
+                  desc={project.desc}
+                  skills={project.skills}
+                />
+              );
+            })}
           </Row>
         </Container>
       </Container>

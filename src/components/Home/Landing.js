@@ -26,7 +26,7 @@ export default function Landing() {
       <Container className="d-flex flex-column flex-xl-row flex-lg-row w-100 align-items-center justify-content-around text-light">
         <div className="d-flex flex-column align-items-center my-info">
           <h6>Hobbies</h6>
-          <p>Web Development</p>
+          <p>Web Development, Tennis, Football</p>
         </div>
         <div className="w-30 d-flex flex-column align-items-center my-info">
           <h6>Email id</h6>

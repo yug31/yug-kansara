@@ -7,6 +7,7 @@ import Landing from "./Home/Landing";
 import Projects from "./Project/Projects";
 import About from "./About/About";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CV from "./CV/CV";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/" exact component={Landing} />
             <Route path="/projects" exact component={Projects} />
             <Route path="/about" exact component={About} />
+            <Route path="/cv" exact component={CV} />
           </Switch>
         </div>
       </>
